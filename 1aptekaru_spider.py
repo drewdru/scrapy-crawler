@@ -62,9 +62,7 @@ class AptekaruSpider(scrapy.Spider):
                     if driver.execute_script("return document.readyState") == 'complete':
                         break
                 return Selector(text=driver.page_source)
-        except TimeoutException as err:
-            return False
-        except Exception as err:
+        except (TimeoutException, Exception):
             return False
 
 
