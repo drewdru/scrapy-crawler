@@ -26,4 +26,5 @@ curl -s "https://api.github.com/repos/mozilla/geckodriver/releases/latest" \
 scrapy runspider roszdravnadzor_xml.py
 scrapy runspider roszdravnadzor.py
 python roszdravnadzor_opendata_parser.py
+scrapy runspider asna_spider.py
 ```
