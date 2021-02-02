@@ -1,0 +1,5 @@
+.vscode
+.env
+env/
+firefox/
+**/__pycache__/*
